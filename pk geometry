@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПК ГЕОМЕТРИЯ | Производство РВД и Демонтаж</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(12px); }
+        .neon-blue { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); border: 1px solid rgba(59, 130, 246, 0.4); }
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 selection:bg-blue-500" x-data="geometryApp()">
+
+    <nav class="fixed w-full z-50 glass border-b border-gray-800 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="font-black text-2xl tracking-tighter uppercase">ПК <span class="text-blue-500">Геометрия</span></span>
+                <span class="text-[10px] text-gray-500 uppercase tracking-widest">Промышленные решения</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#calc" class="hover:text-blue-400 transition">Калькулятор</a>
+                <a href="#services" class="hover:text-blue-400 transition">Услуги</a>
+                <a href="#about" class="hover:text-blue-400 transition">Демонтаж</a>
+            </div>
+            <button @click="isCartOpen = true" class="relative bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
+                🛒 <span x-show="cart.length > 0" class="absolute -top-1 -right-1 bg-blue-600 text-[10px] w-5 h-5 flex items-center justify-center rounded-full" x-text="cart.length"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80')] bg-cover bg-center scale-105 opacity-30"></div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">СИЛА <span class="text-blue-500 italic">ДАВЛЕНИЯ</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">Изготовление РВД для спецтехники, грузовиков и промышленности. Ремонт за 15 минут. Работаем 24/7 в Полевском.</p>
+            <div class="flex flex-wrap justify-center gap-4 uppercase text-xs font-bold">
+                <a href="#calc" class="bg-blue-600 px-10 py-5 rounded-full hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">Запустить калькулятор</a>
+                <a href="https://t.me/+79827195455" class="border border-gray-600 px-10 py-5 rounded-full hover:bg-white hover:text-black transition">Telegram связь</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-24 px-6 bg-gray-900">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
+                <div class="text-blue-500 text-3xl mb-4 font-bold">01</div>
+                <h3 class="text-xl font-bold mb-3 uppercase">Спецтехника</h3>
+                <p class="text-gray-400 text-sm italic">Komatsu, CAT, JCB, лесозаготовка. Рукава любой сложности с гарантией.</p>
+            </div>
+            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
+                <div class="text-blue-500 text-3xl mb-4 font-bold">02</div>
+                <h3 class="text-xl font-bold mb-3 uppercase">Пром. Оборудование</h3>
+                <p class="text-gray-400 text-sm italic">Химические рукава, штукатурные станции, моечное оборудование высокого давления.</p>
+            </div>
+            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
+                <div class="text-blue-500 text-3xl mb-4 font-bold">03</div>
+                <h3 class="text-xl font-bold mb-3 uppercase">Демонтаж</h3>
+                <p class="text-gray-400 text-sm italic italic">А также демонтаж бетонных конструкций, зданий и сооружений в Свердловской области.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="calc" class="py-24 px-6 relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black uppercase">Инженерный <span class="text-blue-500">Конфигуратор</span></h2>
+                <p class="text-gray-500 mt-2">Точный расчет стоимости изготовления рукава онлайн</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 bg-gray-900 p-8 md:p-12 rounded-[40px] neon-blue">
+                <div class="space-y-6">
+                    <div>
+                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Диаметр шланга (DN)</label>
+                        <select x-model="calc.dn" class="w-full mt-2 bg-gray-800 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="6">DN06 (1/4")</option>
+                            <option value="10">DN10 (3/8")</option>
+                            <option value="12">DN12 (1/2")</option>
+                            <option value="16">DN16 (5/8")</option>
+                            <option value="20">DN20 (3/4")</option>
+                            <option value="25">DN25 (1")</option>
+                            <option value="31">DN06 (1.1/4")</option>
+                            <option value="1SN DN06 (1/4\")</option>  
+                            <option value= "1SN DN08 (5/16\")</option>
+                            <option value="1SN DN10 (3/8\")</option>
+                            <option value="1SN DN12 (1/2\")</option>
+                            <option value="1SN DN16 (5/8\")</option>
+                            <option value="1SN DN19 (3/4\")</option>
+                            <option value="1SN DN25 (1\")</option>
+                            <option value="1SN DN31 (1.1/4\")</option>
+                            <option value="2SN DN06 (1/4\")</option>
+                            <option value="2SN DN08 (5/16\")</option>
+                            <option value="2SN DN10 (3/8\")</option>
+                            <option value="2SN DN12 (1/2\")</option>                    
+                            <option value= "2SN DN16 (5/8\")</option>
+                            <option value="2SN DN19 (3/4\")</option>
+                            <option value="2SN DN25 (1\")</option>
+                            <option value="2SN DN31 (1.1/4\")</option>
+                            <option value="2SN DN38 (1.1/2\")</option>
+                            <option value="2SN DN51 (2\")</option>
+                            <option value="4SP DN10 (3/8\")</option> 
+                            <option value="4SP DN12 (1/2\")</option>
+                            <option value="4SP DN19 (3/4\")</option>
+                            <option value="4SH DN25 (1\")</option>
+                            <option value="4SH DN31 (1.1/4\")</option>
+                            <option value="4SH DN38 (1.1/2\")</option>
+                            <option value="KARCHER DN06 (1-wire")</option>
+                            <option value="KARCHER DN08 (2-wire")</option>                    
+                            <option value= "PTFE DN10 (Тефлон")</option>
+                            <option value="PTFE DN12 (Тефлон")</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Давление (Бар)</label>
+                        <input type="range" min="100" max="700" step="50" x-model="calc.pressure" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer mt-4 accent-blue-500">
+                        <div class="flex justify-between text-xs mt-2 text-blue-400 font-bold"><span x-text="calc.pressure + ' Bar'"></span></div>
+                    </div>
+                    <div>
+                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Длина (Метры)</label>
+                        <input type="number" x-model="calc.length" step="0.1" class="w-full mt-2 bg-gray-800 border-none p-4 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-center p-8 bg-blue-600/10 rounded-3xl border border-blue-600/20 text-center">
+                    <span class="text-xs uppercase font-bold text-blue-400 tracking-widest">Предварительная цена</span>
+                    <div class="text-6xl font-black my-4" x-text="calculatePrice() + ' ₽'"></div>
+                    <button @click="addToCart" class="w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-blue-500 transition shadow-xl shadow-blue-600/30">Добавить в корзину</button>
+                    <p class="text-[10px] text-gray-500 mt-4">Цена включает стандартные фитинги и работу по опрессовке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-black px-6 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="col-span-1 lg:col-span-2">
+                <h3 class="text-2xl font-black mb-6">ПК ГЕОМЕТРИЯ</h3>
+                <p class="text-gray-500 text-sm max-w-sm">Профессиональный сервис гидравлических систем и строительный демонтаж в г. Полевской. Собственное производство.</p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase text-blue-500 mb-4 tracking-widest">Адрес</h4>
+                <p class="text-sm text-gray-400">623000, Свердловская обл.<br>г. Полевской, ул. Совхозная 14, корп. 8</p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase text-blue-500 mb-4 tracking-widest">Связь</h4>
+                <a href="tel:+79827195455" class="block font-bold text-lg hover:text-blue-400">+7 982 719-54-55</a>
+                <p class="text-xs text-gray-500 mt-2 italic">Telegram привязан к номеру</p>
+            </div>
+        </div>
+    </footer>
+
+    <div x-show="isCartOpen" class="fixed inset-0 z-[100] flex justify-end" x-cloak x-transition>
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="isCartOpen = false"></div>
+        <div class="relative w-full max-w-md bg-gray-950 h-full shadow-2xl p-8 flex flex-col border-l border-gray-800">
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-2xl font-black uppercase">Ваш заказ</h2>
+                <button @click="isCartOpen = false" class="text-gray-500 hover:text-white text-2xl">✕</button>
+            </div>
+
+            <div class="flex-1 overflow-y-auto space-y-4">
+                <template x-for="(item, index) in cart" :key="index">
+                    <div class="bg-gray-900 p-5 rounded-3xl border border-gray-800 flex justify-between items-center">
+                        <div>
+                            <div class="font-black text-sm uppercase" x-text="item.name"></div>
+                            <div class="text-[10px] text-gray-500 mt-1" x-text="item.desc"></div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-bold text-blue-500" x-text="item.price + ' ₽'"></div>
+                            <button @click="cart.splice(index, 1)" class="text-[10px] text-red-500 uppercase font-bold mt-2 underline">Удалить</button>
+                        </div>
+                    </div>
+                </template>
+                <div x-show="cart.length === 0" class="text-center py-20 text-gray-600">Ваша корзина пока пуста</div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800" x-show="cart.length > 0">
+                <div class="flex justify-between items-end mb-8">
+                    <span class="text-xs font-bold uppercase text-gray-500">Итоговая сумма</span>
+                    <span class="text-3xl font-black text-white" x-text="totalPrice() + ' ₽'"></span>
+                </div>
+                <button @click="sendToTelegram" :disabled="loading" class="w-full bg-green-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-green-500 disabled:opacity-50 transition flex justify-center items-center">
+                    <span x-show="!loading">Отправить заказ в Telegram</span>
+                    <span x-show="loading" class="animate-pulse">Отправка данных...</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function geometryApp() {
+            return {
+                // ПАРАМЕТРЫ TELEGRAM - ЗАМЕНИТЕ НА СВОИ
+                tgToken: '8633245568:AAELbaVibgpM4uVXo6VhpEqRPOOVcENxf_o', 
+                tgChatId: '5019934310',
+
+                isCartOpen: false,
+                loading: false,
+                calc: { dn: 10, pressure: 250, length: 1 },
+                cart: [],
+
+                calculatePrice() {
+                    // Инженерная формула ПК Геометрия
+                    const basePrice = 650; // Стоимость фитингов и работ
+                    const pressureFactor = (this.calc.pressure * 0.4);
+                    const diameterFactor = (this.calc.dn / 6);
+                    const final = (basePrice + pressureFactor) * diameterFactor * this.calc.length;
+                    return Math.round(final);
+                },
+
+                addToCart() {
+                    this.cart.push({
+                        name: `Рукав РВД DN${this.calc.dn}`,
+                        desc: `${this.calc.pressure} Bar | ${this.calc.length} м.`,
+                        price: this.calculatePrice()
+                    });
+                    this.isCartOpen = true;
+                },
+
+                totalPrice() {
+                    return this.cart.reduce((sum, item) => sum + item.price, 0);
+                },
+
+                async sendToTelegram() {
+                    this.loading = true;
+                    let message = "📦 НОВЫЙ ЗАКАЗ: ПК ГЕОМЕТРИЯ\n";
+                    message += "--------------------------\n";
+                    this.cart.forEach((item, i) => {
+                        message += `${i+1}. ${item.name}\n   📝 ${item.desc}\n   💰 ${item.price} ₽\n\n`;
+                    });
+                    message += "--------------------------\n";
+                    message += `ИТОГО: ${this.totalPrice()} ₽`;
+
+                    try {
+                        const res = await fetch(`https://api.telegram.org/bot${this.tgToken}/sendMessage`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ chat_id: this.tgChatId, text: message })
+                        });
+                        
+                        if (res.ok) {
+                            alert('Заказ успешно отправлен! Мы свяжемся с вами.');
+                            this.cart = [];
+                            this.isCartOpen = false;
+                        }
+                    } catch (e) {
+                        alert('Ошибка отправки. Пожалуйста, позвоните нам напрямую.');
+                    } finally {
+                        this.loading = false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
