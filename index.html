@@ -1,259 +1,1753 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПК ГЕОМЕТРИЯ | Производство РВД изготовление по образцам заказчика</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="ПК Геометрия - производство рукавов высокого давления (РВД) в Полевском. Изготовление и ремонт РВД для спецтехники, промышленного оборудования. Работаем по Свердловской области и России.">
+    <meta name="keywords" content="РВД Полевской, рукава высокого давления Свердловская область, изготовление РВД, ремонт рукавов высокого давления, гидравлические шланги, РВД для спецтехники, ПК Геометрия">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="ПК Геометрия">
+    <meta name="geo.region" content="RU-SVE">
+    <meta name="geo.placename" content="Полевской, Свердловская область">
+    <meta name="geo.position" content="56.4432;60.1878">
+    <meta name="ICBM" content="56.4432, 60.1878">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ПК Геометрия - Изготовление РВД в Полевском | Рукава высокого давления">
+    <meta property="og:description" content="Производство и ремонт рукавов высокого давления. Работаем с 2010 года. Доставка по Свердловской области.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://pk-geometria.ru">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ПК Геометрия - РВД в Полевском">
+    <meta name="twitter:description" content="Изготовление рукавов высокого давления для спецтехники и промышленности">
+    
+    <title>ПК Геометрия - Изготовление РВД в Полевском | Рукава высокого давления Свердловская область</title>
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ПК Геометрия",
+        "description": "Изготовление и ремонт рукавов высокого давления (РВД)",
+        "url": "https://pk-geometria.ru",
+        "telephone": "+7-982-719-54-55",
+        "email": "info@pk-geometria.ru",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Совхозная, 14, корпус 8",
+            "addressLocality": "Полевской",
+            "addressRegion": "Свердловская область",
+            "postalCode": "623388",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "56.4432",
+            "longitude": "60.1878"
+        },
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-15:00",
+        "priceRange": "₽₽",
+        "currenciesAccepted": "RUB",
+        "paymentAccepted": "Наличные, безналичный расчет",
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "56.4432",
+                "longitude": "60.1878"
+            },
+            "geoRadius": "500000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Услуги по РВД",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Изготовление рукавов высокого давления"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Ремонт РВД"
+                    }
+                }
+            ]
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-982-719-54-55",
+                "contactType": "sales",
+                "availableLanguage": ["Russian"],
+                "areaServed": "RU"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-982-719-54-55",
+                "contactType": "technical support",
+                "availableLanguage": ["Russian"],
+                "areaServed": "RU"
+            }
+        ],
+        "sameAs": [
+            "https://wa.me/79827195455",
+            "https://t.me/pk_geometria"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://pk-geometria.ru",
+        "name": "ПК Геометрия",
+        "description": "Производство рукавов высокого давления в Полевском",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://pk-geometria.ru/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://pk-geometria.ru"
+            }
+        ]
+    }
+    </script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(12px); }
-        .neon-blue { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); border: 1px solid rgba(59, 130, 246, 0.4); }
-        [x-cloak] { display: none !important; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #c53030;
+            --dark: #1a202c;
+            --light: #f7fafc;
+            --gray: #4a5568;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #ffffff;
+        }
+
+        /* Навигация */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 0.8rem 5%;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border: 2px solid var(--accent);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-contacts {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .phone-link {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            line-height: 1.2;
+        }
+
+        .phone-link span {
+            font-size: 0.75rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        .messengers {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .messenger-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .messenger-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .whatsapp {
+            background: #f0fdf4;
+            color: #16a34a;
+            border-color: #bbf7d0;
+        }
+
+        .whatsapp:hover {
+            background: #16a34a;
+            color: white;
+        }
+
+        .telegram {
+            background: #f0f9ff;
+            color: #0284c7;
+            border-color: #bae6fd;
+        }
+
+        .telegram:hover {
+            background: #0284c7;
+            color: white;
+        }
+
+        /* Герой-секция */
+        .hero {
+            min-height: 90vh;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            padding: 8rem 5% 4rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .hero-content h1 span {
+            color: var(--accent);
+            display: block;
+        }
+
+        .hero-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-subtitle {
+            color: var(--gray);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        .hero-feature::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(197, 48, 48, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: #9b2c2c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(197, 48, 48, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-visual {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .specs-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            font-weight: 500;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .specs-table tr:hover td {
+            background: #f8fafc;
+        }
+
+        /* Плавающие контакты */
+        .floating-contacts {
+            position: fixed;
+            right: 2rem;
+            bottom: 2rem;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .floating-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .floating-btn.whatsapp { background: #16a34a; }
+        .floating-btn.telegram { background: #0284c7; }
+        .floating-btn.phone { background: var(--accent); }
+
+        .floating-btn::after {
+            content: attr(data-label);
+            position: absolute;
+            right: 70px;
+            background: var(--dark);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .floating-btn:hover::after {
+            opacity: 1;
+            right: 75px;
+        }
+
+        /* Секции */
+        section {
+            padding: 5rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        /* Преимущества */
+        .features {
+            background: white;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            border: 2px solid var(--border);
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Продукция */
+        .products {
+            background: var(--light);
+        }
+
+        .products-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border-color: var(--secondary);
+        }
+
+        .product-header {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-header h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-body {
+            padding: 1.5rem;
+        }
+
+        .product-specs {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-specs li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--gray);
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-specs li:last-child {
+            border-bottom: none;
+        }
+
+        .product-price {
+            font-size: 1.6rem;
+            color: var(--accent);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fef2f2;
+            border-radius: 4px;
+        }
+
+        .product-cta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .btn-small {
+            padding: 0.8rem;
+            font-size: 0.8rem;
+            justify-content: center;
+        }
+
+        /* Процесс */
+        .process {
+            background: white;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .process-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 3rem;
+            right: -1rem;
+            width: 2rem;
+            height: 2px;
+            background: var(--border);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--light);
+        }
+
+        .process-step h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .process-step p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Калькулятор */
+        .calculator {
+            background: var(--light);
+        }
+
+        .calc-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 3rem;
+        }
+
+        .calc-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+        }
+
+        .calc-result {
+            grid-column: 1 / -1;
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .calc-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            margin: 1rem 0;
+        }
+
+        /* Контакты */
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .contact-address {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent);
+            margin-bottom: 2rem;
+        }
+
+        .contact-address h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-address p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .contact-method:hover {
+            border-color: var(--accent);
+            background: #fef2f2;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-icon.whatsapp { background: #dcfce7; color: #16a34a; }
+        .contact-icon.telegram { background: #e0f2fe; color: #0284c7; }
+        .contact-icon.phone { background: #fee2e2; color: var(--accent); }
+
+        .contact-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: var(--primary);
+        }
+
+        .contact-details p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .contact-form-wrapper {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-form-wrapper h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Футер */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 5% 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .logo-title {
+            color: white;
+            font-size: 1.6rem;
+        }
+
+        .footer-brand .logo-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.8;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .footer-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-contact {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-contact:hover {
+            color: white;
+        }
+
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-yandex {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid,
+            .products-grid,
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid,
+            .products-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .calc-form,
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .floating-contacts {
+                right: 1rem;
+                bottom: 1rem;
+            }
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        @media (max-width: 1024px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-contacts {
+                display: none;
+            }
+        }
+
+        /* Yandex Maps */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background: var(--light);
+            border-radius: 4px;
+            margin-top: 2rem;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+        }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100 selection:bg-blue-500" x-data="geometryApp()">
+<body>
 
-    <nav class="fixed w-full z-50 glass border-b border-gray-800 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex flex-col">
-                <span class="font-black text-2xl tracking-tighter uppercase">ПК <span class="text-blue-500">Геометрия</span></span>
-                <span class="text-[10px] text-gray-500 uppercase tracking-widest">Промышленные решения</span>
+    <!-- Навигация -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">ПК</div>
+                <div class="logo-text">
+                    <span class="logo-title">ГЕОМЕТРИЯ</span>
+                    <span class="logo-subtitle">Рукава высокого давления</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#products">Продукция</a></li>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#process">Как заказать</a></li>
+                <li><a href="#calculator">Расчет</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+
+            <div class="nav-contacts">
+                <a href="tel:+79827195455" class="phone-link">
+                    +7 (982) 719-54-55
+                    <span>Ежедневно 8:00-20:00</span>
+                </a>
+                <div class="messengers">
+                    <a href="https://wa.me/79827195455" target="_blank" class="messenger-btn whatsapp" title="WhatsApp">
+                        📱
+                    </a>
+                    <a href="https://t.me/+79827195455" target="_blank" class="messenger-btn telegram" title="Telegram">
+                        ✈️
+                    </a>
+                </div>
             </div>
-            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
-                <a href="#calc" class="hover:text-blue-400 transition">Калькулятор</a>
-                <a href="#services" class="hover:text-blue-400 transition">Услуги</a>
-                <a href="#about" class="hover:text-blue-400 transition">Помощь</a>
-            </div>
-            <button @click="isCartOpen = true" class="relative bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition">
-                🛒 <span x-show="cart.length > 0" class="absolute -top-1 -right-1 bg-blue-600 text-[10px] w-5 h-5 flex items-center justify-center rounded-full" x-text="cart.length"></span>
-            </button>
+
+            <button class="mobile-menu-btn">☰</button>
         </div>
     </nav>
 
-    <header class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80')] bg-cover bg-center scale-105 opacity-30"></div>
-        <div class="relative z-10 text-center px-6">
-            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">СИЛА <span class="text-blue-500 italic">ДАВЛЕНИЯ</span></h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">Изготовление РВД для спецтехники, грузовиков и промышленности. Ремонт за 15 минут. Работаем 24/7 в Полевском.</p>
-            <div class="flex flex-wrap justify-center gap-4 uppercase text-xs font-bold">
-                <a href="#calc" class="bg-blue-600 px-10 py-5 rounded-full hover:bg-blue-500 transition shadow-lg shadow-blue-900/40">Запустить калькулятор</a>
-                <a href="https://t.me/+79827195455" class="border border-gray-600 px-10 py-5 rounded-full hover:bg-white hover:text-black transition">Telegram связь</a>
-            </div>
-        </div>
-    </header>
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-location">
+                    📍 Полевской, Свердловская область
+                </div>
+                <h1>Производство рукавов <span>высокого давления</span></h1>
+                <p class="hero-subtitle">
+                    ПК Геометрия — надежный производитель РВД для спецтехники, 
+                    промышленного оборудования и сельхозмашин. Работаем с 2010 года.
+                </p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">Изготовление за 30 минут</div>
+                    <div class="hero-feature">Гарантия 12 месяцев</div>
+                    <div class="hero-feature">Работаем с НДС</div>
+                    <div class="hero-feature">Доставка по области</div>
+                </div>
 
-    <section id="services" class="py-24 px-6 bg-gray-900">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
-                <div class="изображения.jpg"></div>
-                <h3 class="text-xl font-bold mb-3 uppercase">Спецтехника</h3>
-                <p class="text-gray-400 text-sm italic">Komatsu,Tadano,JonnDeere,CAT, JCB, лесозаготовка. Рукава любой сложности с гарантией.</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/79827195455?text=Здравствуйте! Нужно изготовить РВД" target="_blank" class="btn btn-primary">
+                        📱 Написать в WhatsApp
+                    </a>
+                    <a href="tel:+79827195455" class="btn btn-secondary">
+                        📞 Позвонить
+                    </a>
+                </div>
             </div>
-            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
-                <div class="text-blue-500 text-3xl mb-4 font-bold">02</div>
-                <h3 class="text-xl font-bold mb-3 uppercase">Пром. Оборудование</h3>
-                <p class="text-gray-400 text-sm italic">Химические рукава, штукатурные станции, моечное оборудование высокого давления.</p>
-            </div>
-            <div class="p-8 bg-gray-800 rounded-3xl border border-gray-700">
-                <div class="text-blue-500 text-3xl mb-4 font-bold">03</div>
-                <h3 class="text-xl font-bold mb-3 uppercase">Помощь</h3>
-                <p class="text-gray-400 text-sm italic italic">А также изготовление индивидуальных рукавов по образцу заказчика.</p>
+
+            <div class="hero-visual">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>Параметр</th>
+                            <th>Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Диаметр</td>
+                            <td>DN 6 ÷ 50 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Рабочее давление</td>
+                            <td>до 700 бар</td>
+                        </tr>
+                        <tr>
+                            <td>Температура</td>
+                            <td>-40°C ÷ +120°C</td>
+                        </tr>
+                        <tr>
+                            <td>Стандарт</td>
+                            <td>ГОСТ, ISO, SAE</td>
+                        </tr>
+                        <tr>
+                            <td>Срок изготовления</td>
+                            <td>20-30 минут</td>
+                        </tr>
+                        <tr>
+                            <td>Гарантия</td>
+                            <td>12 месяцев</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <section id="calc" class="py-24 px-6 relative">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black uppercase">Инженерный <span class="text-blue-500">Конфигуратор</span></h2>
-                <p class="text-gray-500 mt-2">Приблизительный расчет стоимости изготовления рукава онлайн</p>
+    <!-- Преимущества -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Почему выбирают ПК Геометрия</h2>
+            <p>Работаем на результат. Более 5000 выполненных заказов за 14 лет работы</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Собственное производство</h3>
+                <p>Современное оборудование для опрессовки и тестирования РВД</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Паспорт качества</h3>
+                <p>Каждое изделие сопровождается документацией и паспортом</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Доставка</h3>
+                <p>По Полевскому и Свердловской области. Отправка ТК по России</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>Работаем с юрлицами</h3>
+                <p>Безналичный расчет, закрывающие документы, договора</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продукция -->
+    <section class="products" id="products">
+        <div class="section-header">
+            <h2>Продукция</h2>
+            <p>Изготавливаем рукава любой сложности по вашим размерам или образцу</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🚜</div>
+                    <h3>Для спецтехники</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Тип <span>1SN, 2SN, 4SP, 4SH</span></li>
+                        <li>Давление <span>до 700 бар</span></li>
+                        <li>Применение <span>Экскаваторы, погрузчики</span></li>
+                    </ul>
+                    <div class="product-price">от 950 ₽</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужны РВД для спецтехники" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 bg-gray-900 p-8 md:p-12 rounded-[40px] neon-blue">
-                <div class="space-y-6">
-                    <div>
-                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Диаметр шланга (DN)</label>
-                        <select x-model="calc.dn" class="w-full mt-2 bg-gray-800 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="6">DN06 (1/4")</option>
-                            <option value="10">DN10 (3/8")</option>
-                            <option value="12">DN12 (1/2")</option>
-                            <option value="16">DN16 (5/8")</option>
-                            <option value="20">DN20 (3/4")</option>
-                            <option value="25">DN25 (1")</option>
-                            <option value="31">DN06 (1.1/4")</option>
-                            <option value="6">DN06 (1/4\")</option>  
-                            <option value= "8">DN08 (5/16\")</option>
-                            <option value="10">DN10 (3/8\")</option>
-                            <option value="12">DN12 (1/2\")</option>
-                            <option value="16">DN16 (5/8\")</option>
-                            <option value="19">DN19 (3/4\")</option>
-                            <option value="25">DN25 (1\")</option>
-                            <option value="31">DN31 (1.1/4\")</option>
-                            <option value="6">DN06 (1/4\")</option>
-                            <option value="8">DN08 (5/16\")</option>
-                            <option value="10">DN10 (3/8\")</option>
-                            <option value="22">DN12 (1/2\")</option>                    
-                            <option value="16">DN16 (5/8\")</option>
-                            <option value="19">DN19 (3/4\")</option>
-                            <option value="25">DN25 (1\")</option>
-                            <option value="31">DN31 (1.1/4\")</option>
-                            <option value="38">DN38 (1.1/2\")</option>
-                            <option value="51">DN51 (2\")</option>
-                            <option value="10">DN10 (3/8\")</option> 
-                            <option value="12">DN12 (1/2\")</option>
-                            <option value="19">DN19 (3/4\")</option>
-                            <option value="25">DN25 (1\")</option>
-                            <option value="31">DN31 (1.1/4\")</option>
-                            <option value="38">DN38 (1.1/2\")</option>
-                            <option value="KARCHER">DN06 (1-wire")</option>
-                            <option value="KARCHER">DN08 (2-wire")</option>                    
-                            <option value= "PTFE">DN10 (Тефлон")</option>
-                            <option value="PTFE">DN12 (Тефлон")</option>
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🏭</div>
+                    <h3>Промышленные</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Тип <span>Усиленные, термостойкие</span></li>
+                        <li>Давление <span>до 500 бар</span></li>
+                        <li>Применение <span>Станки, прессы</span></li>
+                    </ul>
+                    <div class="product-price">от 1 200 ₽</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужны промышленные РВД" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🚛</div>
+                    <h3>Автомобильные</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Тип <span>ГУР, тормозные, КПП</span></li>
+                        <li>Давление <span>до 300 бар</span></li>
+                        <li>Применение <span>Грузовики, сельхозтехника</span></li>
+                    </ul>
+                    <div class="product-price">от 750 ₽</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужны автомобильные РВД" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🔧</div>
+                    <h3>Тормозные рукава</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Тип <span>Пневматические, гидравлические</span></li>
+                        <li>Стандарт <span>ГОСТ 17431</span></li>
+                        <li>Применение <span>Все типы ТС</span></li>
+                    </ul>
+                    <div class="product-price">от 550 ₽</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужны тормозные рукава" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🌊</div>
+                    <h3>Вода и воздух</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Тип <span>Напорные, всасывающие</span></li>
+                        <li>Материал <span>Резина, ПВХ</span></li>
+                        <li>Применение <span>Компрессоры, насосы</span></li>
+                    </ul>
+                    <div class="product-price">от 350 ₽/м</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужны рукава для воды/воздуха" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <div class="product-icon">🛠️</div>
+                    <h3>Ремонт РВД</h3>
+                </div>
+                <div class="product-body">
+                    <ul class="product-specs">
+                        <li>Услуги <span>Замена фитингов, опрессовка</span></li>
+                        <li>Контроль <span>Гидроиспытания 1.5x</span></li>
+                        <li>Гарантия <span>6 месяцев</span></li>
+                    </ul>
+                    <div class="product-price">от 400 ₽</div>
+                    <div class="product-cta">
+                        <a href="https://wa.me/79827195455?text=Здравствуйте! Нужен ремонт РВД" target="_blank" class="btn btn-small btn-primary">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79827195455" target="_blank" class="btn btn-small btn-secondary">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс -->
+    <section class="process" id="process">
+        <div class="section-header">
+            <h2>Как сделать заказ</h2>
+            <p>Четыре простых шага от заявки до получения готового изделия</p>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Заявка</h3>
+                <p>Позвоните или напишите в мессенджеры. Пришлите фото или размеры</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Расчет</h3>
+                <p>Рассчитаем стоимость и сроки за 5 минут. Согласуем детали</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Изготовление</h3>
+                <p>Произведем рукав на профессиональном оборудовании с контролем</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Получение</h3>
+                <p>Самовывоз в Полевском или доставка по области и РФ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section class="calculator" id="calculator">
+        <div class="section-header">
+            <h2>Калькулятор стоимости</h2>
+            <p>Предварительный расчет. Точную цену уточните у специалиста</p>
+        </div>
+
+        <div class="calc-container">
+            <form class="calc-form" id="calcForm">
+                <div class="form-group">
+                    <label>Тип рукава</label>
+                    <select id="hoseType">
+                        <option value="1">1SN (1 оплетка) — стандарт</option>
+                        <option value="1.3">2SN (2 оплетки) — усиленный</option>
+                        <option value="1.8">4SP (4 спирали) — высокое давление</option>
+                        <option value="2.2">4SH (4 спирали, тяжелый)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Диаметр (DN)</label>
+                    <select id="diameter">
+                        <option value="6">DN 6 (1/4")</option>
+                        <option value="8">DN 8 (5/16")</option>
+                        <option value="10" selected>DN 10 (3/8")</option>
+                        <option value="12">DN 12 (1/2")</option>
+                        <option value="16">DN 16 (5/8")</option>
+                        <option value="20">DN 20 (3/4")</option>
+                        <option value="25">DN 25 (1")</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Длина (мм)</label>
+                    <input type="number" id="length" value="1000" min="100" step="50">
+                </div>
+
+                <div class="form-group">
+                    <label>Тип фитингов</label>
+                    <select id="fittings">
+                        <option value="1">BSP/NPT (стандарт)</option>
+                        <option value="1.4">ORFS (плоское)</option>
+                        <option value="1.6">Metric (метрические)</option>
+                        <option value="2">Фланцевые</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Количество, шт</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+
+                <div class="calc-result">
+                    <div>Приблизительная стоимость:</div>
+                    <div class="calc-price" id="totalPrice">1 100 ₽</div>
+                    <div style="opacity: 0.9; margin-bottom: 1.5rem;">за <span id="totalQuantity">1</span> шт. с НДС</div>
+                    <a href="https://wa.me/79827195455?text=Здравствуйте! Просчитайте РВД по моим параметрам" target="_blank" class="btn btn-primary" style="background: white; color: var(--primary);">
+                        📱 Уточнить в WhatsApp
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                
+                <div class="contact-address">
+                    <h4>📍 Адрес производства</h4>
+                    <p>
+                        623388, Свердловская область<br>
+                        г. Полевской, ул. Совхозная, 14, корпус 8<br>
+                        <strong>Режим работы:</strong> Пн-Пт 8:00-18:00, Сб 9:00-15:00
+                    </p>
+                </div>
+
+                <div class="contact-methods">
+                    <a href="https://wa.me/79827195455" target="_blank" class="contact-method">
+                        <div class="contact-icon whatsapp">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+7 (982) 719-54-55 — быстрый ответ</p>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/+79827195455" target="_blank" class="contact-method">
+                        <div class="contact-icon telegram">✈️</div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <p>+7 (982) 719-54-55 — отправляйте фото</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+79827195455" class="contact-method">
+                        <div class="contact-icon phone">📞</div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p>+7 (982) 719-54-55 — звоните прямо сейчас</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=YOUR_ORG_ID" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Оставить заявку</h3>
+                <form onsubmit="event.preventDefault(); alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ваше имя *</label>
+                            <input type="text" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон *</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label>Что нужно изготовить?</label>
+                        <input type="text" placeholder="Например: РВД для экскаватора 2 шт., DN12, 1.5 метра">
+                    </div>
+
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label>Удобный способ связи</label>
+                        <select style="padding: 0.8rem;">
+                            <option>WhatsApp</option>
+                            <option>Telegram</option>
+                            <option>Телефонный звонок</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Давление (Бар)</label>
-                        <input type="range" min="100" max="700" step="50" x-model="calc.pressure" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer mt-4 accent-blue-500">
-                        <div class="flex justify-between text-xs mt-2 text-blue-400 font-bold"><span x-text="calc.pressure + ' Bar'"></span></div>
-                    </div>
-                    <div>
-                        <label class="text-[10px] uppercase font-bold text-gray-500 tracking-widest ml-1">Длина (Метры)</label>
-                        <input type="number" x-model="calc.length" step="0.1" class="w-full mt-2 bg-gray-800 border-none p-4 rounded-2xl outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                </div>
 
-                <div class="flex flex-col justify-center items-center p-8 bg-blue-600/10 rounded-3xl border border-blue-600/20 text-center">
-                    <span class="text-xs uppercase font-bold text-blue-400 tracking-widest">Предварительная цена</span>
-                    <div class="text-6xl font-black my-4" x-text="calculatePrice() + ' ₽'"></div>
-                    <button @click="addToCart" class="w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-tighter hover:bg-blue-500 transition shadow-xl shadow-blue-600/30">Добавить в корзину</button>
-                    <p class="text-[10px] text-gray-500 mt-4">Цена включает стандартные фитинги и работу по опрессовке</p>
-                </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        📨 Отправить заявку
+                    </button>
+                    
+                    <p style="text-align: center; margin-top: 1rem; color: var(--gray); font-size: 0.9rem;">
+                        Или свяжитесь напрямую:<br>
+                        <a href="https://wa.me/79827195455" target="_blank" style="color: #16a34a; font-weight: 700;">WhatsApp</a> | 
+                        <a href="https://t.me/+79827195455" target="_blank" style="color: #0284c7; font-weight: 700;">Telegram</a> | 
+                        <a href="tel:+79827195455" style="color: var(--accent); font-weight: 700;">Позвонить</a>
+                    </p>
+                </form>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 bg-black px-6 border-t border-gray-900">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-            <div class="col-span-1 lg:col-span-2">
-                <h3 class="text-2xl font-black mb-6">ПК ГЕОМЕТРИЯ</h3>
-                <p class="text-gray-500 text-sm max-w-sm">Профессиональный сервис гидравлических систем  в г. Полевской. Собственное производство.</p>
+    <!-- Футер -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon" style="background: white; color: var(--primary);">ПК</div>
+                    <div class="logo-text">
+                        <span class="logo-title" style="color: white;">ГЕОМЕТРИЯ</span>
+                        <span class="logo-subtitle">Рукава высокого давления</span>
+                    </div>
+                </div>
+                <p>Производственная компания Геометрия — надежный поставщик рукавов высокого давления в Свердловской области. Работаем с физическими и юридическими лицами.</p>
+                <div class="footer-contacts">
+                    <a href="tel:+79827195455" class="footer-contact">
+                        📞 +7 (982) 719-54-55
+                    </a>
+                    <a href="mailto:info@pk-geometria.ru" class="footer-contact">
+                        ✉️ info@pk-geometria.ru
+                    </a>
+                    <span class="footer-contact">
+                        📍 623388, Свердловская обл., г. Полевской, ул. Совхозная, 14, корп. 8
+                    </span>
+                </div>
             </div>
-            <div>
-                <h4 class="text-xs font-bold uppercase text-blue-500 mb-4 tracking-widest">Адрес</h4>
-                <p class="text-sm text-gray-400">623000, Свердловская обл.<br>г. Полевской, ул. Совхозная 14, корп. 8</p>
+
+            <div class="footer-links">
+                <h4>Продукция</h4>
+                <ul>
+                    <li><a href="#">РВД для спецтехники</a></li>
+                    <li><a href="#">Промышленные РВД</a></li>
+                    <li><a href="#">Автомобильные РВД</a></li>
+                    <li><a href="#">Тормозные рукава</a></li>
+                    <li><a href="#">Ремонт РВД</a></li>
+                </ul>
             </div>
-            <div>
-                <h4 class="text-xs font-bold uppercase text-blue-500 mb-4 tracking-widest">Связь</h4>
-                <a href="tel:+79827195455" class="block font-bold text-lg hover:text-blue-400">+7 982 719-54-55</a>
-                <p class="text-xs text-gray-500 mt-2 italic">Telegram привязан к номеру</p>
+
+            <div class="footer-links">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Клиентам</h4>
+                <ul>
+                    <li><a href="https://wa.me/79827195455">Написать в WhatsApp</a></li>
+                    <li><a href="https://t.me/+79827195455">Telegram</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Реквизиты</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 ПК Геометрия. Все права защищены.</p>
+            <div class="footer-yandex">
+                <span>Изготовление РВД в Полевском</span>
+                <!-- Yandex.Metrika counter -->
+                <script type="text/javascript" >
+                   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                   m[i].l=1*new Date();
+                   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                   ym(XXXXXXXX, "init", {
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                   });
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                <!-- /Yandex.Metrika counter -->
             </div>
         </div>
     </footer>
 
-    <div x-show="isCartOpen" class="fixed inset-0 z-[100] flex justify-end" x-cloak x-transition>
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="isCartOpen = false"></div>
-        <div class="relative w-full max-w-md bg-gray-950 h-full shadow-2xl p-8 flex flex-col border-l border-gray-800">
-            <div class="flex justify-between items-center mb-10">
-                <h2 class="text-2xl font-black uppercase">Ваш заказ</h2>
-                <button @click="isCartOpen = false" class="text-gray-500 hover:text-white text-2xl">✕</button>
-            </div>
-
-            <div class="flex-1 overflow-y-auto space-y-4">
-                <template x-for="(item, index) in cart" :key="index">
-                    <div class="bg-gray-900 p-5 rounded-3xl border border-gray-800 flex justify-between items-center">
-                        <div>
-                            <div class="font-black text-sm uppercase" x-text="item.name"></div>
-                            <div class="text-[10px] text-gray-500 mt-1" x-text="item.desc"></div>
-                        </div>
-                        <div class="text-right">
-                            <div class="font-bold text-blue-500" x-text="item.price + ' ₽'"></div>
-                            <button @click="cart.splice(index, 1)" class="text-[10px] text-red-500 uppercase font-bold mt-2 underline">Удалить</button>
-                        </div>
-                    </div>
-                </template>
-                <div x-show="cart.length === 0" class="text-center py-20 text-gray-600">Ваша корзина пока пуста</div>
-            </div>
-
-            <div class="pt-8 border-t border-gray-800" x-show="cart.length > 0">
-                <div class="flex justify-between items-end mb-8">
-                    <span class="text-xs font-bold uppercase text-gray-500">Итоговая сумма</span>
-                    <span class="text-3xl font-black text-white" x-text="totalPrice() + ' ₽'"></span>
-                </div>
-                <button @click="sendToTelegram" :disabled="loading" class="w-full bg-green-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-green-500 disabled:opacity-50 transition flex justify-center items-center">
-                    <span x-show="!loading">Отправить заказ в Telegram</span>
-                    <span x-show="loading" class="animate-pulse">Отправка данных...</span>
-                </button>
-            </div>
-        </div>
+    <!-- Плавающие кнопки -->
+    <div class="floating-contacts">
+        <a href="https://wa.me/79827195455" target="_blank" class="floating-btn whatsapp" data-label="WhatsApp">
+            📱
+        </a>
+        <a href="https://t.me/+79827195455" target="_blank" class="floating-btn telegram" data-label="Telegram">
+            ✈️
+        </a>
+        <a href="tel:+79827195455" class="floating-btn phone" data-label="Позвонить">
+            📞
+        </a>
     </div>
 
     <script>
-        function geometryApp() {
-            return {
-                // ПАРАМЕТРЫ TELEGRAM - ЗАМЕНИТЕ НА СВОИ
-                tgToken: '8633245568:AAELbaVibgpM4uVXo6VhpEqRPOOVcENxf_o', 
-                tgChatId: '5019934310',
+        // Калькулятор
+        const calcForm = document.getElementById('calcForm');
+        const hoseType = document.getElementById('hoseType');
+        const diameter = document.getElementById('diameter');
+        const length = document.getElementById('length');
+        const fittings = document.getElementById('fittings');
+        const quantity = document.getElementById('quantity');
+        const totalPrice = document.getElementById('totalPrice');
+        const totalQuantity = document.getElementById('totalQuantity');
 
-                isCartOpen: false,
-                loading: false,
-                calc: { dn: 10, pressure: 250, length: 1 },
-                cart: [],
+        function calculatePrice() {
+            const basePrice = 450;
+            const typeMultiplier = parseFloat(hoseType.value);
+            const diamMultiplier = parseInt(diameter.value) / 6;
+            const lenMultiplier = parseInt(length.value) / 1000;
+            const fitMultiplier = parseFloat(fittings.value);
+            const qty = parseInt(quantity.value);
 
-                calculatePrice() {
-                    // Инженерная формула ПК Геометрия
-                    const basePrice = 650; // Стоимость фитингов и работ
-                    const pressureFactor = (this.calc.pressure * 0.4);
-                    const diameterFactor = (this.calc.dn / 6);
-                    const final = (basePrice + pressureFactor) * diameterFactor * this.calc.length;
-                    return Math.round(final);
-                },
-
-                addToCart() {
-                    this.cart.push({
-                        name: `Рукав РВД DN${this.calc.dn}`,
-                        desc: `${this.calc.pressure} Bar | ${this.calc.length} м.`,
-                        price: this.calculatePrice()
-                    });
-                    this.isCartOpen = true;
-                },
-
-                totalPrice() {
-                    return this.cart.reduce((sum, item) => sum + item.price, 0);
-                },
-
-                async sendToTelegram() {
-                    this.loading = true;
-                    let message = "📦 НОВЫЙ ЗАКАЗ: ПК ГЕОМЕТРИЯ\n";
-                    message += "--------------------------\n";
-                    this.cart.forEach((item, i) => {
-                        message += `${i+1}. ${item.name}\n   📝 ${item.desc}\n   💰 ${item.price} ₽\n\n`;
-                    });
-                    message += "--------------------------\n";
-                    message += `ИТОГО: ${this.totalPrice()} ₽`;
-
-                    try {
-                        const res = await fetch(`https://api.telegram.org/bot${this.tgToken}/sendMessage`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ chat_id: this.tgChatId, text: message })
-                        });
-                        
-                        if (res.ok) {
-                            alert('Заказ успешно отправлен! Мы свяжемся с вами.');
-                            this.cart = [];
-                            this.isCartOpen = false;
-                        }
-                    } catch (e) {
-                        alert('Ошибка отправки. Пожалуйста, позвоните нам напрямую.');
-                    } finally {
-                        this.loading = false;
-                    }
-                }
-            }
+            const price = Math.round(basePrice * typeMultiplier * diamMultiplier * lenMultiplier * fitMultiplier * qty);
+            
+            totalPrice.textContent = price.toLocaleString('ru-RU') + ' ₽';
+            totalQuantity.textContent = qty;
         }
+
+        calcForm.addEventListener('change', calculatePrice);
+        calcForm.addEventListener('input', calculatePrice);
+
+        // Плавный скролл
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
+
 </body>
-</html>
+</html>   
